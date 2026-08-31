@@ -30,6 +30,14 @@ jobs:
       - name: Build the Astro site
         run: npm run build
 
+      - name: Create the Pages project on the first deployment
+        continue-on-error: true
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages project create opencode-newbie-to-pro --production-branch=main
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
