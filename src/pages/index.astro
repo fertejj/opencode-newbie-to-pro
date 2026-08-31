@@ -1,0 +1,333 @@
+---
+const siteTitle = 'OpenCode Pro — Hoja de ruta';
+const siteDescription = 'Hoja de ruta visual para aprender, configurar y dominar OpenCode, desde la primera conexión hasta agentes, skills, MCP y personalización avanzada.';
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content={siteDescription}
+    />
+    <meta name="theme-color" content="#0b0d0c" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{siteTitle}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#roadmap">Saltar a la hoja de ruta</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="OpenCode Pro, volver al inicio">
+        <span class="brand-mark" aria-hidden="true">&gt;_</span>
+        <span>OpenCode <strong>Pro</strong></span>
+      </a>
+      <nav class="top-nav" aria-label="Navegación principal">
+        <a href="#roadmap">Roadmap</a>
+        <a href="#recursos">Índice</a>
+        <a class="nav-cta" href="https://opencode.ai/docs/" target="_blank" rel="noreferrer">Docs oficiales ↗</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span>ROADMAP 01</span> De cero a flujo profesional</p>
+          <h1 id="hero-title">Dominá OpenCode.<br /><em>Diseñá tu propio agente.</em></h1>
+          <p class="hero-lede">
+            Una ruta práctica para pasar de “funciona en mi terminal” a un sistema de trabajo
+            reproducible, seguro y adaptado a cada repositorio.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#nivel-0">Empezar la ruta <span aria-hidden="true">↓</span></a>
+            <a class="button button-ghost" href="#recursos">Ver los 15 recursos</a>
+          </div>
+        </div>
+
+        <aside class="terminal-card" aria-label="Resumen de la ruta">
+          <div class="terminal-bar">
+            <span></span><span></span><span></span>
+            <p>ruta-opencode.md</p>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> opencode /init</p>
+            <div class="terminal-rule"></div>
+            <p class="terminal-label">TU PROGRESO</p>
+            <ol class="progress-list">
+              <li><span>00</span> Instalar y conectar</li>
+              <li><span>01</span> Configurar con criterio</li>
+              <li><span>02</span> Diseñar agentes</li>
+              <li><span>03</span> Extender herramientas</li>
+              <li><span>04</span> Pulir el sistema</li>
+            </ol>
+            <p class="terminal-status"><span></span> 5 niveles · 15 documentos · 1 proyecto final</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="stats-strip" aria-label="Características de la hoja de ruta">
+        <div><strong>5</strong><span>niveles progresivos</span></div>
+        <div><strong>15</strong><span>guías oficiales</span></div>
+        <div><strong>100%</strong><span>orientado a práctica</span></div>
+        <div><strong>∞</strong><span>formas de personalizar</span></div>
+      </section>
+
+      <section class="roadmap-intro" id="roadmap">
+        <div>
+          <p class="section-kicker">LA RUTA</p>
+          <h2>Aprendé por capas.<br />Construí mientras avanzás.</h2>
+        </div>
+        <p>
+          Cada nivel termina con un entregable concreto. No hace falta memorizar la documentación:
+          el objetivo es construir una configuración que puedas explicar, versionar y reutilizar.
+        </p>
+      </section>
+
+      <div class="roadmap">
+        <section class="level" id="nivel-0" aria-labelledby="level-0-title">
+          <div class="level-marker"><span>00</span></div>
+          <div class="level-content">
+            <div class="level-heading">
+              <div>
+                <p class="level-meta">NIVEL 00 · 30–60 MIN</p>
+                <h3 id="level-0-title">Prepará el terreno</h3>
+              </div>
+              <span class="level-tag">Fundamentos</span>
+            </div>
+            <p class="level-description">
+              Entendé dónde vive la configuración, conectá un proveedor y elegí el modelo adecuado
+              para tu costo, velocidad y complejidad.
+            </p>
+            <div class="resource-grid resource-grid-3">
+              <a class="resource-card" href="https://opencode.ai/docs/config/" target="_blank" rel="noreferrer">
+                <span class="resource-number">01</span>
+                <div><p>Config</p><span>Archivos, jerarquía y opciones base</span></div>
+                <b aria-hidden="true">↗</b>
+              </a>
+              <a class="resource-card" href="https://opencode.ai/docs/providers/" target="_blank" rel="noreferrer">
+                <span class="resource-number">02</span>
+                <div><p>Providers</p><span>Credenciales, conexión y endpoints</span></div>
+                <b aria-hidden="true">↗</b>
+              </a>
+              <a class="resource-card" href="https://opencode.ai/docs/models/" target="_blank" rel="noreferrer">
+                <span class="resource-number">03</span>
+                <div><p>Models</p><span>Defaults, variantes y selección</span></div>
+                <b aria-hidden="true">↗</b>
+              </a>
+            </div>
+            <div class="mission">
+              <span class="mission-icon">✓</span>
+              <div><strong>Misión del nivel</strong><p>Crear un <code>opencode.json</code> mínimo y comprobar dos modelos con una misma tarea corta.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="level" id="nivel-1" aria-labelledby="level-1-title">
+          <div class="level-marker"><span>01</span></div>
+          <div class="level-content">
+            <div class="level-heading">
+              <div>
+                <p class="level-meta">NIVEL 01 · 1–2 HORAS</p>
+                <h3 id="level-1-title">Dale contexto y límites</h3>
+              </div>
+              <span class="level-tag">Control</span>
+            </div>
+            <p class="level-description">
+              Un agente profesional conoce el proyecto y también sus fronteras. Definí reglas
+              útiles, permisos mínimos y el alcance exacto de sus herramientas.
+            </p>
+            <div class="resource-grid resource-grid-3">
+              <a class="resource-card" href="https://opencode.ai/docs/rules/" target="_blank" rel="noreferrer">
+                <span class="resource-number">04</span>
+                <div><p>Rules / AGENTS.md</p><span>Convenciones y contexto del repositorio</span></div>
+                <b aria-hidden="true">↗</b>
+              </a>
+              <a class="resource-card" href="https://opencode.ai/docs/permissions/" target="_blank" rel="noreferrer">
+                <span class="resource-number">05</span>
+                <div><p>Permissions</p><span>Allow, ask y deny con precisión</span></div>
+                <b aria-hidden="true">↗</b>
+              </a>
+              <a class="resource-card" href="https://opencode.ai/docs/tools/" target="_blank" rel="noreferrer">
+                <span class="resource-number">06</span>
+                <div><p>Tools</p><span>Capacidades disponibles para el modelo</span></div>
+                <b aria-hidden="true">↗</b>
+              </a>
+            </div>
+            <div class="mission">
+              <span class="mission-icon">✓</span>
+              <div><strong>Misión del nivel</strong><p>Generar <code>AGENTS.md</code> con <code>/init</code>, depurarlo y bloquear operaciones destructivas por defecto.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="level" id="nivel-2" aria-labelledby="level-2-title">
+          <div class="level-marker"><span>02</span></div>
+          <div class="level-content">
+            <div class="level-heading">
+              <div>
+                <p class="level-meta">NIVEL 02 · 2–3 HORAS</p>
+                <h3 id="level-2-title">Convertí hábitos en sistema</h3>
+              </div>
+              <span class="level-tag">Workflows</span>
+            </div>
+            <p class="level-description">
+              Separá responsabilidades con agentes, encapsulá procedimientos en skills y
+              transformá prompts repetitivos en comandos consistentes.
+            </p>
+            <div class="resource-grid resource-grid-3">
+              <a class="resource-card" href="https://opencode.ai/docs/agents/" target="_blank" rel="noreferrer">
+                <span class="resource-number">07</span>
+                <div><p>Agents</p><span>Roles, modelos y permisos por agente</span></div>
+                <b aria-hidden="true">↗</b>
+              </a>
+              <a class="resource-card" href="https://opencode.ai/docs/skills/" target="_blank" rel="noreferrer">
+                <span class="resource-number">08</span>
+                <div><p>Skills</p><span>Instrucciones reutilizables bajo demanda</span></div>
+                <b aria-hidden="true">↗</b>
+              </a>
+              <a class="resource-card" href="https://opencode.ai/docs/commands/" target="_blank" rel="noreferrer">
+                <span class="resource-number">09</span>
+                <div><p>Commands</p><span>Atajos para tareas repetitivas</span></div>
+                <b aria-hidden="true">↗</b>
+              </a>
+            </div>
+            <div class="mission">
+              <span class="mission-icon">✓</span>
+              <div><strong>Misión del nivel</strong><p>Crear un agente de revisión sin permisos de edición, una skill y el comando <code>/review</code>.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="level" id="nivel-3" aria-labelledby="level-3-title">
+          <div class="level-marker"><span>03</span></div>
+          <div class="level-content">
+            <div class="level-heading">
+              <div>
+                <p class="level-meta">NIVEL 03 · 3–5 HORAS</p>
+                <h3 id="level-3-title">Extendé el entorno</h3>
+              </div>
+              <span class="level-tag">Integraciones</span>
+            </div>
+            <p class="level-description">
+              Conectá fuentes externas, creá funciones específicas para tu dominio y automatizá
+              la calidad del código con feedback estructurado.
+            </p>
+            <div class="resource-grid resource-grid-2">
+              <a class="resource-card" href="https://opencode.ai/docs/mcp-servers/" target="_blank" rel="noreferrer">
+                <span class="resource-number">10</span>
+                <div><p>MCP</p><span>Servicios y herramientas externas</span></div>
+                <b aria-hidden="true">↗</b>
+              </a>
+              <a class="resource-card" href="https://opencode.ai/docs/custom-tools/" target="_blank" rel="noreferrer">
+                <span class="resource-number">11</span>
+                <div><p>Custom Tools</p><span>Funciones propias en TypeScript o JavaScript</span></div>
+                <b aria-hidden="true">↗</b>
+              </a>
+              <a class="resource-card" href="https://opencode.ai/docs/formatters/" target="_blank" rel="noreferrer">
+                <span class="resource-number">12</span>
+                <div><p>Formatters</p><span>Formato consistente después de editar</span></div>
+                <b aria-hidden="true">↗</b>
+              </a>
+              <a class="resource-card" href="https://opencode.ai/docs/lsp/" target="_blank" rel="noreferrer">
+                <span class="resource-number">13</span>
+                <div><p>LSP</p><span>Diagnósticos y contexto del lenguaje</span></div>
+                <b aria-hidden="true">↗</b>
+              </a>
+            </div>
+            <div class="mission">
+              <span class="mission-icon">✓</span>
+              <div><strong>Misión del nivel</strong><p>Integrar un servidor MCP de confianza y documentar cuándo puede usarlo cada agente.</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="level" id="nivel-4" aria-labelledby="level-4-title">
+          <div class="level-marker"><span>04</span></div>
+          <div class="level-content">
+            <div class="level-heading">
+              <div>
+                <p class="level-meta">NIVEL 04 · 1 HORA + ITERACIÓN</p>
+                <h3 id="level-4-title">Hacelo realmente tuyo</h3>
+              </div>
+              <span class="level-tag">Maestría</span>
+            </div>
+            <p class="level-description">
+              La velocidad llega cuando tu interfaz acompaña tu memoria muscular. Ajustá los atajos,
+              el tema y el bucle completo hasta que la herramienta desaparezca del camino.
+            </p>
+            <div class="resource-grid resource-grid-2">
+              <a class="resource-card" href="https://opencode.ai/docs/keybinds/" target="_blank" rel="noreferrer">
+                <span class="resource-number">14</span>
+                <div><p>Keybinds</p><span>Atajos y leader key a tu medida</span></div>
+                <b aria-hidden="true">↗</b>
+              </a>
+              <a class="resource-card" href="https://opencode.ai/docs/themes/" target="_blank" rel="noreferrer">
+                <span class="resource-number">15</span>
+                <div><p>Themes</p><span>Interfaz legible y consistente</span></div>
+                <b aria-hidden="true">↗</b>
+              </a>
+            </div>
+            <div class="mission mission-final">
+              <span class="mission-icon">★</span>
+              <div>
+                <strong>Proyecto final: tu starter kit de OpenCode</strong>
+                <p>Versioná una carpeta <code>.opencode/</code> con agente reviewer, skill de entrega, comando de QA, permisos seguros y una guía breve para tu equipo.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="principles" aria-labelledby="principles-title">
+        <div class="principles-heading">
+          <p class="section-kicker">CRITERIO PROFESIONAL</p>
+          <h2 id="principles-title">Tres reglas para no convertir configuración en ruido.</h2>
+        </div>
+        <div class="principle-grid">
+          <article><span>01</span><h3>Empezá mínimo</h3><p>Agregá una regla o herramienta solo cuando resuelva un problema que ya observaste.</p></article>
+          <article><span>02</span><h3>Medí el resultado</h3><p>Compará calidad, tiempo y costo con tareas repetibles antes de cambiar de modelo.</p></article>
+          <article><span>03</span><h3>Versioná el sistema</h3><p>Tratá agentes, reglas y skills como código: revisables, documentados y fáciles de revertir.</p></article>
+        </div>
+      </section>
+
+      <section class="resource-index" id="recursos" aria-labelledby="resources-title">
+        <div>
+          <p class="section-kicker">ACCESO RÁPIDO</p>
+          <h2 id="resources-title">Toda la documentación,<br />en un solo lugar.</h2>
+        </div>
+        <div class="link-cloud">
+          <a href="https://opencode.ai/docs/config/" target="_blank" rel="noreferrer">Config ↗</a>
+          <a href="https://opencode.ai/docs/providers/" target="_blank" rel="noreferrer">Providers ↗</a>
+          <a href="https://opencode.ai/docs/models/" target="_blank" rel="noreferrer">Models ↗</a>
+          <a href="https://opencode.ai/docs/agents/" target="_blank" rel="noreferrer">Agents ↗</a>
+          <a href="https://opencode.ai/docs/rules/" target="_blank" rel="noreferrer">Rules ↗</a>
+          <a href="https://opencode.ai/docs/permissions/" target="_blank" rel="noreferrer">Permissions ↗</a>
+          <a href="https://opencode.ai/docs/tools/" target="_blank" rel="noreferrer">Tools ↗</a>
+          <a href="https://opencode.ai/docs/skills/" target="_blank" rel="noreferrer">Skills ↗</a>
+          <a href="https://opencode.ai/docs/mcp-servers/" target="_blank" rel="noreferrer">MCP ↗</a>
+          <a href="https://opencode.ai/docs/custom-tools/" target="_blank" rel="noreferrer">Custom Tools ↗</a>
+          <a href="https://opencode.ai/docs/commands/" target="_blank" rel="noreferrer">Commands ↗</a>
+          <a href="https://opencode.ai/docs/formatters/" target="_blank" rel="noreferrer">Formatters ↗</a>
+          <a href="https://opencode.ai/docs/lsp/" target="_blank" rel="noreferrer">LSP ↗</a>
+          <a href="https://opencode.ai/docs/keybinds/" target="_blank" rel="noreferrer">Keybinds ↗</a>
+          <a href="https://opencode.ai/docs/themes/" target="_blank" rel="noreferrer">Themes ↗</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-brand"><span class="brand-mark" aria-hidden="true">&gt;_</span><p><strong>OpenCode Pro Roadmap</strong><br />Guía independiente basada en documentación oficial.</p></div>
+      <a href="#top">Volver arriba ↑</a>
+    </footer>
+  </body>
+</html>
